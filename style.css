@@ -13,14 +13,14 @@ ul {
 
 header {
     text-align: center;
-    border: 1px solid red;
-    background-color: yellow;
+    border: 1px solid #FF0000;
+    background-color:  #FFFF00;
 }
 
 #parent{
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #left {
@@ -29,4 +29,12 @@ header {
 
 #right {
     display: inline-block;
+}
+
+footer {
+    border: 1px solid rgb(255, 0, 0);
+    background-color: #FFFF00;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
