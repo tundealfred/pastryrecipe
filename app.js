@@ -4,18 +4,16 @@ let username = prompt("What is your name?");
 // concatenation
 // console.log("Hello " + username);
 
-let time = prompt("What hour is it? (0-23)");
+let compare = prompt("Do you want to make a reservation? (Yes/No)");
 
-if (time <= 11) {
-  message = "Good morning";
-} else if (time <= 17) {
-  message = "Good afternoon";
-} else if (time < 24) {
-  message = "Good evening";
+if (compare === "Yes") {
+  message = "Table 5 Available!";
+} else if (compare === "No") {
+  message = "Look at our Yummy Pastry";
 } else {
-  message = "My friend, that is not a time!";
+  message = "My friend, Let us know when you're HUNGRY!";
 }
 
 message = "Hello " + username + ". " + message;
-console.log("message");
-// document.write(message);
+// console.log("message");
+document.write(message);
