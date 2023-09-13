@@ -1,0 +1,32 @@
+h1 {
+    padding: 20px;
+}
+
+li {
+    float: center;
+}
+
+ul {
+    padding: 0;
+    margin:0;
+}
+
+header {
+    text-align: center;
+    border: 1px solid red;
+    background-color: yellow;
+}
+
+#parent{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#left {
+    display: inline-block;
+}
+
+#right {
+    display: inline-block;
+}

@@ -9,17 +9,18 @@
 <body>
     <header>
         <h1>Pastry Recipes</h1>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+        <ul class="nav">
+            <li class="nav_item"><a href="/"></a>Home</li>
+            <li class="nav_item"><a href=""></a>About</li>
+            <li class="nav_item"><a href=""></a>Contact</li>
         </ul>
     </header>
     <main>
-        <div class="left">
+        <div id="parent">
+        <div id="left">
             <h2>Cookies</h2>
             <img src="https://cdn-icons-png.flaticon.com/256/1047/1047711.png" alt="Cookies">
-            <ul>
+            <ul class="left_list">
                 <h3>Ingredients</h3>
                 <li>Butter</li>
                 <li>Sugar</li>
@@ -28,10 +29,10 @@
                 <li>Chocolate chi</li>
             </ul>
         </div>
-        <div class="right">
+        <div id="right">
             <h2>Croissant</h2>
             <img src="https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/256/32372-croissant-icon.png" alt="Croissant">
-            <ul>
+            <ul class="left_right">
                 <h3>Ingredients</h3>
                 <li>Yeast</li>
                 <li>Milk</li>
@@ -39,6 +40,7 @@
                 <li>Vegetable oil</li>
                 <li>Eggs</li>
             </ul>
+        </div>
         </div>
     </main>
     <footer> © copyright 2023</footer>
