@@ -4,6 +4,7 @@ function makeReserv() {
 
   let username = prompt("What is your name?");
   
+  
   let compare = prompt("Do you want to make a reservation? (Yes/No)");
   
     if (compare === "Yes") {
@@ -23,6 +24,10 @@ function makeReserv() {
 function getRating() {
 
   let rating = prompt('Please rate me 1 - 5','5');
+
+  while (!(rating > 0 && rating <=5)) {
+    rating = prompt('Enter Number between 1 and 5')
+  }
 
   for (let i = 0; i < rating; i++) {
     document.write("<img src='images/star.png'/>");
