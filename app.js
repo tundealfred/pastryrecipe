@@ -1,11 +1,16 @@
 function makeReserv() {
 
   let message;
-
   let username = prompt("What is your name?");
-  
-  
+    while (!username || username.trim() === "") {
+      username = prompt('Try again! Your name, please:');
+    }
+
   let compare = prompt("Do you want to make a reservation? (Yes/No)");
+
+    while (compare !== "Yes" && compare !== "No") {
+      compare = prompt('Try again! Please enter "Yes" or "No":');
+    }
   
     if (compare === "Yes") {
       message = "Table 5 Available!";
@@ -16,7 +21,6 @@ function makeReserv() {
     }
   
     message = "Hello " + username + ". " + message;
-
     document.write(message);
 }
 
