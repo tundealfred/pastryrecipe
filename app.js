@@ -1,19 +1,20 @@
-let message;
+function makeReserv() {
 
-let username = prompt("What is your name?");
-// concatenation
-// console.log("Hello " + username);
+  let message;
 
-let compare = prompt("Do you want to make a reservation? (Yes/No)");
+  let username = prompt("What is your name?");
+  
+  let compare = prompt("Do you want to make a reservation? (Yes/No)");
+  
+  if (compare === "Yes") {
+    message = "Table 5 Available!";
+  } else if (compare === "No") {
+    message = "Look at our Yummy Pastry";
+  } else {
+    message = "My friend, Let us know when you're HUNGRY!";
+  }
+  
+  message = "Hello " + username + ". " + message;
 
-if (compare === "Yes") {
-  message = "Table 5 Available!";
-} else if (compare === "No") {
-  message = "Look at our Yummy Pastry";
-} else {
-  message = "My friend, Let us know when you're HUNGRY!";
+  document.write(message);
 }
-
-message = "Hello " + username + ". " + message;
-// console.log("message");
-document.write(message);
