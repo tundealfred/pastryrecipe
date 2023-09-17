@@ -2,6 +2,12 @@ body{
     font-family: Merienda;
 }
 
+.reserve {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 h1 {
     padding: 20px;
 }
@@ -53,6 +59,10 @@ header {
 
 #right {
     display: inline-block;
+}
+
+.reserve {
+    justify-content: center;
 }
 
 footer {

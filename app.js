@@ -25,9 +25,22 @@ function makeReserv() {
 }
 
 
-function getRating() {
+function rateCookie() {
 
-  let rating = prompt('Please rate me 1 - 5','5');
+  let rating = prompt('Please rate my cookie : 1 - 5','5');
+
+  while (!(rating > 0 && rating <=5)) {
+    rating = prompt('Enter Number between 1 and 5')
+  }
+
+  for (let i = 0; i < rating; i++) {
+    document.write("<img src='images/star.png'/>");
+  }
+}
+
+function rateCroissant() {
+
+  let rating = prompt('Please rate my croissant : 1 - 5','5');
 
   while (!(rating > 0 && rating <=5)) {
     rating = prompt('Enter Number between 1 and 5')
